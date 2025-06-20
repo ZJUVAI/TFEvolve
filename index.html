@@ -252,39 +252,55 @@ Function Design through Multimodal Large Language Models</h1>
       <h3 class="title is-4">Text-guided Results</h3>
       <div class="columns is-centered is-multiline">
         <!-- Bonsai Text -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/bonsai_text/rotation_video.mp4" type="video/mp4">
-            </video>
-            <div class="video-caption" id="bonsai-text-caption"></div>
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/bonsai_text/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <div class="video-caption" id="bonsai-text-caption" data-instruction="static/videos/bonsai_text/instruction.txt">Loading...</div>
           </div>
         </div>
         <!-- Feet Text -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/feet_text/rotation_video.mp4" type="video/mp4">
-            </video>
-            <div class="video-caption" id="feet-text-caption"></div>
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/feet_text/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <div class="video-caption" id="feet-text-caption" data-instruction="static/videos/feet_text/instruction.txt">Loading...</div>
           </div>
         </div>
         <!-- Head Text -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/head_text/rotation_video.mp4" type="video/mp4">
-            </video>
-            <div class="video-caption" id="head-text-caption"></div>
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/head_text/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <div class="video-caption" id="head-text-caption" data-instruction="static/videos/head_text/instruction.txt">Loading...</div>
           </div>
         </div>
         <!-- Jet Text -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/jet_text/rotation_video.mp4" type="video/mp4">
-            </video>
-            <div class="video-caption" id="jet-text-caption"></div>
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/jet_text/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <div class="video-caption" id="jet-text-caption" data-instruction="static/videos/jet_text/instruction.txt">Loading...</div>
           </div>
         </div>
       </div>
@@ -293,39 +309,55 @@ Function Design through Multimodal Large Language Models</h1>
       <h3 class="title is-4">Image-guided Results</h3>
       <div class="columns is-centered is-multiline">
         <!-- Chest Image -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/chest_image/rotation_video.mp4" type="video/mp4">
-            </video>
-            <img src="static/videos/chest_image/instruction.png" alt="Chest instruction" class="instruction-image">
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/chest_image/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <img src="static/videos/chest_image/instruction.png" alt="Chest instruction" class="instruction-image" loading="lazy">
           </div>
         </div>
         <!-- Engine Image -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/engine_image/rotation_video.mp4" type="video/mp4">
-            </video>
-            <img src="static/videos/engine_image/instruction.png" alt="Engine instruction" class="instruction-image">
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/engine_image/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <img src="static/videos/engine_image/instruction.png" alt="Engine instruction" class="instruction-image" loading="lazy">
           </div>
         </div>
         <!-- Head Image -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/head_image/rotation_video.mp4" type="video/mp4">
-            </video>
-            <img src="static/videos/head_image/instruction.png" alt="Head instruction" class="instruction-image">
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/head_image/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <img src="static/videos/head_image/instruction.png" alt="Head instruction" class="instruction-image" loading="lazy">
           </div>
         </div>
         <!-- Jet Image -->
-        <div class="column is-6">
+        <div class="column is-3">
           <div class="content">
-            <video width="100%" autoplay controls muted loop>
-              <source src="static/videos/jet_image/rotation_video.mp4" type="video/mp4">
-            </video>
-            <img src="static/videos/jet_image/instruction.png" alt="Jet instruction" class="instruction-image">
+            <div class="video-container">
+              <video width="100%" controls preload="none" poster="static/images/loading.jpg" loading="lazy">
+                <source data-src="static/videos/jet_image/rotation_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="loading-spinner"></div>
+            </div>
+            <img src="static/videos/jet_image/instruction.png" alt="Jet instruction" class="instruction-image" loading="lazy">
           </div>
         </div>
       </div>
