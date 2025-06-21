@@ -51,6 +51,16 @@
       margin: 10px auto;
       display: block;
     }
+    .video-container {
+      margin-bottom: 20px;  /* 添加底部间距 */
+    }
+    .video-caption {
+      text-align: center;
+      margin: 10px 0;
+      padding: 5px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -322,7 +332,9 @@ Function Design through Multimodal Large Language Models</h1>
                 Your browser does not support the video tag.
               </video>
             </div>
-            <img src="static/videos/chest_image/instruction.png" alt="Chest instruction" class="instruction-image">
+            <div class="instruction-container">
+              <img src="static/videos/chest_image/instruction.png" alt="Chest instruction" class="instruction-image">
+            </div>
           </div>
         </div>
         <!-- Engine Image -->
@@ -334,7 +346,9 @@ Function Design through Multimodal Large Language Models</h1>
                 Your browser does not support the video tag.
               </video>
             </div>
-            <img src="static/videos/engine_image/instruction.png" alt="Engine instruction" class="instruction-image">
+            <div class="instruction-container">
+              <img src="static/videos/engine_image/instruction.png" alt="Engine instruction" class="instruction-image">
+            </div>
           </div>
         </div>
         <!-- Head Image -->
@@ -346,7 +360,9 @@ Function Design through Multimodal Large Language Models</h1>
                 Your browser does not support the video tag.
               </video>
             </div>
-            <img src="static/videos/head_image/instruction.png" alt="Head instruction" class="instruction-image">
+            <div class="instruction-container">
+              <img src="static/videos/head_image/instruction.png" alt="Head instruction" class="instruction-image">
+            </div>
           </div>
         </div>
         <!-- Jet Image -->
@@ -358,7 +374,9 @@ Function Design through Multimodal Large Language Models</h1>
                 Your browser does not support the video tag.
               </video>
             </div>
-            <img src="static/videos/jet_image/instruction.png" alt="Jet instruction" class="instruction-image">
+            <div class="instruction-container">
+              <img src="static/videos/jet_image/instruction.png" alt="Jet instruction" class="instruction-image">
+            </div>
           </div>
         </div>
       </div>
