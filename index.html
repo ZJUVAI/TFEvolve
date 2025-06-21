@@ -131,7 +131,7 @@
                 </div>
                 -->
               </div>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+              <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
             </div>
 
                   <div class="column has-text-centered">
@@ -188,60 +188,11 @@
 </section>
 
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Direct Volume Rendering (DVR) is a fundamental technique for visualizing volumetric data, with transfer functions (TFs) playing a crucial role in extracting meaningful visual representations. However, designing effective TFs remains unintuitive due to the semantic gap between users' visual intent and the low-level parameters. Recent approaches leveraging vision-language models have shown promise while still facing a fundamental trilemma involving interaction intuitiveness, computational efficiency, and generalizability. This paper introduces a novel framework that addresses these challenges through three key innovations: (1) an intuitive multimodal interaction paradigm enabling users to express design goals using both natural and visual language, (2) a hybrid system integrating human prior knowledge with visual feedback for automated exploration of the TF space, and (3) a formalized volume rendering quality assessment framework based on vision-language models to provide optimal and generalizable visual feedback. The proposed system empowers both novices and experts to explore and customize volume visualizations efficiently. We validate our approach through comprehensive experiments and a detailed case study.
-          </p>
-        </div>
-        
-        <!-- Teaser video moved here -->
-        <div class="hero-body" style="padding-top: 2rem; padding-bottom: 0;">
-          <video poster="" id="tree" autoplay controls muted loop width="100%">
-            <!-- Your video here -->
-            <source src="static/videos/vis25a-sub1146-i8.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- Evaluation Section -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3">Evaluation</h2>
-      <div class="columns is-centered">
-        <div class="column is-10">
-          <div class="content has-text-justified">
-            <p>
-              Analysis of evolutionary algorithm parameters on transfer function optimization. (A) Average rankings over iterations for different population
-              sizes (10-200), showing that larger populations achieve more stable improvements with continued iterations while smaller populations show early
-              rapid gains but unstable convergence. (B) Comparison of optimization effectiveness across different computational budgets (measured by LLM API
-              calls), demonstrating that medium-small populations (25-50) perform better under limited resources, while larger populations (100-200) achieve
-              superior results when computational resources are abundant.
-            </p>
-            <img src="static/images/analysis_of_evolutionary.png" alt="Analysis of evolutionary algorithm parameters" width="100%">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Evaluation Section -->
-
 <!-- Interactive Videos Section -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3">Interactive Videos</h2>
+      <h2 class="title is-3">Results</h2>
       
       <!-- Text-based Instructions Videos -->
       <h3 class="title is-4">Text-guided Results</h3>
@@ -372,6 +323,56 @@
     </div>
   </div>
 </section>
+
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Direct Volume Rendering (DVR) is a fundamental technique for visualizing volumetric data, with transfer functions (TFs) playing a crucial role in extracting meaningful visual representations. However, designing effective TFs remains unintuitive due to the semantic gap between users' visual intent and the low-level parameters. Recent approaches leveraging vision-language models have shown promise while still facing a fundamental trilemma involving interaction intuitiveness, computational efficiency, and generalizability. This paper introduces a novel framework that addresses these challenges through three key innovations: (1) an intuitive multimodal interaction paradigm enabling users to express design goals using both natural and visual language, (2) a hybrid system integrating human prior knowledge with visual feedback for automated exploration of the TF space, and (3) a formalized volume rendering quality assessment framework based on vision-language models to provide optimal and generalizable visual feedback. The proposed system empowers both novices and experts to explore and customize volume visualizations efficiently. We validate our approach through comprehensive experiments and a detailed case study.
+          </p>
+        </div>
+        
+        <!-- Teaser video moved here -->
+        <div class="hero-body" style="padding-top: 2rem; padding-bottom: 0;">
+          <video poster="" id="tree" autoplay controls muted loop width="100%">
+            <!-- Your video here -->
+            <source src="static/videos/vis25a-sub1146-i8.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Evaluation Section -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3">Evaluation</h2>
+      <div class="columns is-centered">
+        <div class="column is-10">
+          <div class="content has-text-justified">
+            <p>
+              Analysis of evolutionary algorithm parameters on transfer function optimization. (A) Average rankings over iterations for different population
+              sizes (10-200), showing that larger populations achieve more stable improvements with continued iterations while smaller populations show early
+              rapid gains but unstable convergence. (B) Comparison of optimization effectiveness across different computational budgets (measured by LLM API
+              calls), demonstrating that medium-small populations (25-50) perform better under limited resources, while larger populations (100-200) achieve
+              superior results when computational resources are abundant.
+            </p>
+            <img src="static/images/analysis_of_evolutionary.png" alt="Analysis of evolutionary algorithm parameters" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Evaluation Section -->
 
 <!-- Case Study Section -->
 <!-- 暂时注释掉 Case Study 章节
