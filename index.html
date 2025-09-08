@@ -6,6 +6,9 @@
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="What You Think Is What You Get: A novel framework for intuitive transfer function design in volume visualization using multimodal large language models. This research bridges the gap between user intent and transfer function design through natural language and visual inputs.">
   <meta property="og:title" content="What You Think Is What You Get: Bridge User Intent and Transfer Function Design through Multimodal Large Language Models"/>
+
+  <meta name="description" content="IntuiTF: A novel framework for intuitive transfer function design in volume visualization using multimodal large language models. This research bridges the gap between user intent and transfer function design through natural language and visual inputs.">
+  <meta property="og:title" content="IntuiTF: MLLM-Guided Transfer Function Optimization for Direct Volume Rendering"/>
   <meta property="og:description" content="A novel framework for intuitive transfer function design in volume visualization using multimodal large language models, enabling both novices and experts to efficiently explore and customize volume visualizations."/>
   <meta property="og:url" content="https://wyysteelhead.github.io/TFEvolve.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -14,7 +17,7 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="What You Think Is What You Get: Intuitive Transfer Function Design">
+  <meta name="twitter:title" content="IntuiTF: Intuitive Transfer Function Design">
   <meta name="twitter:description" content="Bridge user intent and transfer function design through multimodal large language models for intuitive volume visualization.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/workflow.png">
@@ -24,7 +27,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>What You Think Is What You Get</title>
+  <title>IntuiTF</title>
   <link rel="icon" type="image/x-icon" href="static/images/avatar.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -72,7 +75,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">What You Think Is What You Get: Bridge User Intent and Transfer Function Design through Multimodal Large Language Models</h1>
+            <h1 class="title is-1 publication-title">IntuiTF: MLLM-Guided Transfer Function Optimization for Direct Volume Rendering</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
@@ -195,7 +198,7 @@
         <div class="column">
           <video poster="" id="tree" autoplay controls muted loop width="100%">
             <!-- Your video here -->
-            <source src="static/videos/vis25a-sub1146-i8.mp4" type="video/mp4">
+            <source src="static/videos/demo.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -211,7 +214,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Direct Volume Rendering (DVR) is a fundamental technique for visualizing volumetric data, with transfer functions (TFs) playing a crucial role in extracting meaningful visual representations. However, designing effective TFs remains unintuitive due to the semantic gap between users' visual intent and the low-level parameters. Recent approaches leveraging vision-language models have shown promise while still facing a fundamental trilemma involving interaction intuitiveness, computational efficiency, and generalizability. This paper introduces a novel framework that addresses these challenges through three key innovations: (1) an intuitive multimodal interaction paradigm enabling users to express design goals using both natural and visual language, (2) a hybrid system integrating human prior knowledge with visual feedback for automated exploration of the TF space, and (3) a formalized volume rendering quality assessment framework based on vision-language models to provide optimal and generalizable visual feedback. The proposed system empowers both novices and experts to explore and customize volume visualizations efficiently. We validate our approach through comprehensive experiments and a detailed case study.
+            Direct volume rendering (DVR) is a fundamental technique for visualizing volumetric data, where transfer functions (TFs) play a crucial role in extracting meaningful structures. However, designing effective TFs remains unintuitive due to the semantic gap between user intent and TF parameter space. Although numerous TF optimization methods have been proposed to mitigate this issue, existing approaches still face two major challenges: the vast exploration space and limited generalizability. To address these issues, we propose IntuiTF, a novel framework that leverages Multimodal Large Language Models (MLLMs) to guide TF optimization in alignment with user intent. Specifically, our method consists of two key components: \ding{172} an evolution-driven explorer for effective exploration of the TF space, and \ding{173} an MLLM-guided human-aligned evaluator that provides generalizable visual feedback on rendering quality. The explorer and the evaluator together establish an efficient Trial-Insight-Replanning paradigm for TF space exploration. We further extend our framework with an interactive TF design system. We demonstrate the broad applicability of our framework through three case studies and validate the effectiveness of each component through extensive experiments.
           </p>
         </div>
       </div>
@@ -229,7 +232,7 @@
         <img src="static/images/workflow.png" alt="Method Overview" width="100%">
         <div class="content has-text-justified">
           <p>
-            Our WYTWYG framework presents an intent-driven volume visualization approach that effectively bridges user intent with transfer function design. Our methodology consists of two key components: (A) a transfer function optimization approach that combines (A<sub>1</sub>) an evolution-based explorer following the Trial-Insight-Replanning optimization formulation to iteratively generate and refine transfer functions with adaptive replanning capabilities, and (A<sub>2</sub>) an MLLM-based evaluator that assesses visualizations according to both formal quality metrics and user intent alignment. (B) Our interactive transfer function design system implements a three-stage interaction workflow of initialization-customization-refinement, enabling users to express their visualization intentions through natural text descriptions or reference images while progressively refining results to achieve desired outcomes.
+            Our WYTWYG framework presents an TF optimization approach that effectively bridges user intent with transfer function design. Our methodology consists of two key components: (A) a transfer function optimization approach that combines (A<sub>1</sub>) an evolution-based explorer following the Trial-Insight-Replanning optimization formulation to iteratively generate and refine transfer functions with adaptive replanning capabilities, and (A<sub>2</sub>) an MLLM-based evaluator that assesses visualizations according to both formal quality metrics and user intent alignment. (B) Our interactive transfer function design system implements a three-stage interaction workflow of initialization-customization-refinement, enabling users to express their visualization intentions through natural text descriptions or reference images while progressively refining results to achieve desired outcomes.
           </p>
         </div>
       </div>
@@ -361,13 +364,8 @@
       <!-- Case Study Description -->
       <div class="content has-text-justified" style="margin-top: 2rem;">
         <p>
-          Examples of transfer functions designed using our approach. The first row showcases cases where design intent is expressed
-          through text. Users input text descriptions and our approach automatically designs transfer functions to achieve high-quality volume
-          rendering results corresponding to these descriptions. The second row demonstrates cases where design intent is conveyed through
-          images. When users cannot clearly articulate their ideas verbally, they can directly provide reference images to express their intent in
-          visual form. In each example of the second row, the small image in the bottom right corner represents the user intent in the form of a
-          reference image. Reference images for (A) and (B) are from other works, (C) uses the rendered image from the third example in the
-          first row, and (D) utilizes Vincent van Gogh's "The Starry Night."
+          Examples of transfer functions designed using our approach. The first row illustrates text-guided designs, with the corresponding user descriptions shown below each image.
+          The second row illustrates image-guided designs, where each bottom inset shows the user-provided reference.
         </p>
       </div>
     </div>
@@ -430,8 +428,8 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wang2025whatyouthink,
-      title        = {What You Think Is What You Get: Bridge User Intent and Transfer Function Design through Multimodal Large Language Models},
+      <pre><code>@article{wang2025intuiTF,
+      title        = {IntuiTF: MLLM-Guided Transfer Function Optimization for Direct Volume Rendering},
       author       = {Wang, Yiyao and Pan, Bo and Wang, Ke and Liu, Han and Mao, Jinyuan and Liu, Yuxin and Zhu, Minfeng and Zhang, Bo and Chen, Weifeng and Huang, Xiuqi and Chen, Wei},
       year         = {2025},
       publisher    = {arXiv},
