@@ -65,6 +65,22 @@
       background-color: #f5f5f5;
       border-radius: 4px;
     }
+    /* Collapsible section styles */
+    .collapsible-section {
+      width: 100%;
+    }
+    .collapsible-section summary {
+      list-style: none;
+    }
+    .collapsible-section summary::-webkit-details-marker {
+      display: none;
+    }
+    .collapsible-section[open] summary .fas.fa-chevron-down {
+      transform: rotate(180deg);
+    }
+    .collapsible-section summary:hover {
+      background-color: #eeeeee !important;
+    }
   </style>
 </head>
 <body>
@@ -385,48 +401,69 @@
               We demonstrate the practical applicability of our IntuiTF framework through comprehensive use cases that showcase how users can effectively leverage multimodal inputs to design transfer functions for various volume visualization scenarios.
             </p>
             
-            <!-- Case PDF Links Grid -->
+            <!-- Case PDF Embedded Display -->
             <div class="columns is-centered is-multiline" style="margin: 2rem 0;">
-              <div class="column is-4">
-                <div class="has-text-centered">
-                  <span class="link-block">
-                    <a href="static/pdfs/case1.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-info">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Case 1: Consistent Medical Visualization</span>
-                  </a>
-                  </span>
-                  <p class="has-text-centered" style="margin-top: 1rem; font-weight: bold;">Medical Volume Visualization</p>
+              <div class="column is-6">
+                <div class="content">
+                  <h4 class="title is-5 has-text-centered">Case 1: Consistent Medical Visualization</h4>
+                  <div style="border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+                    <embed src="static/pdfs/case1.pdf" type="application/pdf" width="100%" height="500px" style="display: block;">
+                    <!-- Fallback for browsers that don't support embed -->
+                    <div class="has-text-centered" style="padding: 20px; background-color: #f5f5f5;">
+                      <p>Your browser doesn't support PDF embedding.</p>
+                      <a href="static/pdfs/case1.pdf" target="_blank" class="button is-primary">
+                        <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                        <span>View PDF</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="column is-4">
-                <div class="has-text-centered">
-                  <span class="link-block">
-                    <a href="static/pdfs/case2.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-info">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Case 2: Interactive TF Exploration and Customization</span>
-                  </a>
-                  </span>
-                  <p class="has-text-centered" style="margin-top: 1rem; font-weight: bold;">Scientific Data Exploration</p>
+              <div class="column is-6">
+                <div class="content">
+                  <h4 class="title is-5 has-text-centered">Case 2: Interactive TF Exploration and Customization</h4>
+                  <div style="border: 1px solid #ddd; border-radius: 4px; overflow: hidden;">
+                    <embed src="static/pdfs/case2.pdf" type="application/pdf" width="100%" height="500px" style="display: block;">
+                    <!-- Fallback for browsers that don't support embed -->
+                    <div class="has-text-centered" style="padding: 20px; background-color: #f5f5f5;">
+                      <p>Your browser doesn't support PDF embedding.</p>
+                      <a href="static/pdfs/case2.pdf" target="_blank" class="button is-primary">
+                        <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                        <span>View PDF</span>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="column is-4">
+            </div>
+            
+                        <!-- Additional Cases Collapsible Section -->
+            <div class="columns is-centered" style="margin-top: 2rem;">
+              <div class="column is-8">
                 <div class="has-text-centered">
-                  <span class="link-block">
-                    <a href="static/pdfs/additional_cases.pdf" target="_blank"
-                    class="external-link button is-normal is-rounded is-primary">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span>Additional Cases</span>
-                  </a>
-                  </span>
-                  <p class="has-text-centered" style="margin-top: 1rem; font-weight: bold;">Comprehensive Examples</p>
+                  <!-- Collapsible Additional Cases -->
+                  <details class="collapsible-section">
+                    <summary class="collapsible-header" style="cursor: pointer; padding: 10px; border: 1px solid #dbdbdb; border-radius: 4px; background-color: #f5f5f5; margin-bottom: 10px;">
+                      <span style="font-weight: bold; color: #3273dc;">
+                        <i class="fas fa-chevron-down" style="margin-right: 8px; transition: transform 0.3s;"></i>
+                        Additional Cases
+                      </span>
+                    </summary>
+                    <div class="collapsible-content" style="padding: 15px; border: 1px solid #dbdbdb; border-top: none; border-radius: 0 0 4px 4px; background-color: #fafafa;">
+                      <span class="link-block">
+                        <a href="static/pdfs/additional_cases.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-primary">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>View All Additional Cases</span>
+                      </a>
+                      </span>
+                      <p class="has-text-centered" style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+                        Comprehensive examples showcasing the versatility of our approach across different domains and user requirements.
+                      </p>
+                    </div>
+                  </details>
                 </div>
               </div>
             </div>
